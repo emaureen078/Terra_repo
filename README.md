@@ -1,4 +1,3 @@
-Here's a funky and fun README.md for a JavaScript web app designed for Jenkins pipeline and Kubernetes:
 🚀 Funky JS Web App 🤘
 
 Welcome to the Funky JS Web App! This project is a groovy JavaScript application, all set to rock and roll in a Jenkins pipeline and deploy seamlessly on Kubernetes. Let's get this party started! 🎉
