@@ -49,7 +49,7 @@ $ nano cafe-app.yml
   tasks:
   - name: clone repository
     git:
-      repo: https://github.com/Ashfaque-9x/Cafe-App.git
+      repo: https://github.com/witcher7/Terra_repo.git
       dest: /opt/docker/cafe-app
       clone: yes
       update: yes
@@ -60,10 +60,10 @@ $ nano cafe-app.yml
      chdir: /opt/docker/
 
   - name: create tag to push image onto dockerhub
-    command: docker tag cafe-app:latest ashfaque9x/cafe-app:latest
+    command: docker tag cafe-app:latest rg7121/devops_class:tagname
 
   - name: push docker image
-    command: docker push ashfaque9x/cafe-app:latest
+    command: docker push rg7121/devops_class:tagname
 
 $ ansible-playbook cafe-app.yml --check
 $ ansible-playbook cafe-app.yml
