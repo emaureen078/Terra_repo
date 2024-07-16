@@ -77,6 +77,15 @@ $ az login
 $ az aks install-cli
 $ az aks get-credentials --resource-group MyLab-RG --name mylab-cluster
 $ kubectl get nodes
+
+
+OR 
+
+$ sudo yum remove -y aws-cli
+$ pip3 install --user awscli
+$ sudo ln -s $HOME/.local/bin/aws /usr/bin/aws
+$ aws --version
+
 ################################################### Create Deployment and Service Manisfest Files ###################################################
 Refer--https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 $ nano cafe-app-deployment.yml
