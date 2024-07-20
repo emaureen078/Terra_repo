@@ -86,6 +86,29 @@ $ pip3 install --user awscli
 $ sudo ln -s $HOME/.local/bin/aws /usr/bin/aws
 $ aws --version
 
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+
+3--Installing  eksctl
+
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+cd /tmp
+sudo mv /tmp/eksctl /bin
+eksctl version
+
+4--Setup Kubernetes using eksctl
+Refer--https://github.com/aws-samples/eks-workshop/issues/734
+eksctl create cluster --name rg-cluster \
+--region ap-south-1 \
+--node-type t2.small \
+--nodes 3 \
+5-- Verify Cluster with below command
+$ kubectl get nodes
+$ kubectl get svc
+
 ################################################### Create Deployment and Service Manisfest Files ###################################################
 Refer--https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 $ nano cafe-app-deployment.yml
