@@ -133,7 +133,7 @@ spec:
     spec:
       containers:
       - name: cafe-app
-        image: ashfaque9x/cafe-app
+        image: rg7121/devops_class:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
