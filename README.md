@@ -6,7 +6,7 @@ Welcome to the Funky JS Web App! This project is a groovy JavaScript application
 
 
 🎸 Rock on with your code! 🎸
-📬 Contact
+📬 Contact:
 
 Have questions? Hit me up:
 
